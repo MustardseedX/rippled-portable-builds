@@ -21,7 +21,7 @@ There will be two files for every release with the following schema
 
 Since this effort is mainly for existing installations of `rippled` that need to be updated, we will not cover fresh installations. Those should be done on up to date Operating Systems using [usual methods](https://xrpl.org/install-rippled.html).
 
-First download and import the Public key:
+First download and import the public key:
 
 `wget https://raw.githubusercontent.com/XRPLF/rippled-portable-builds/main/xrplf-binary-packages-public.gpg`
 
