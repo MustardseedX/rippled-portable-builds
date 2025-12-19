@@ -96,20 +96,26 @@ else
     read -p "Download and import official GPG key? (y/n) " -n 1 -r
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
+        # Create secure temporary directory
+        TEMP_DIR=$(mktemp -d)
+        chmod 700 "$TEMP_DIR"
+        
         print_info "Downloading GPG key from $GPG_KEY_URL..."
-        if curl -sSL -o /tmp/xrplf-key.gpg "$GPG_KEY_URL"; then
+        if curl -sSL -o "$TEMP_DIR/xrplf-key.gpg" "$GPG_KEY_URL"; then
             print_success "GPG key downloaded"
             print_info "Importing GPG key..."
-            if gpg --import /tmp/xrplf-key.gpg; then
+            if gpg --import "$TEMP_DIR/xrplf-key.gpg"; then
                 print_success "GPG key imported"
                 KEY_IMPORTED=1
-                rm /tmp/xrplf-key.gpg
+                rm -rf "$TEMP_DIR"
             else
                 print_error "Failed to import GPG key"
+                rm -rf "$TEMP_DIR"
                 exit 1
             fi
         else
             print_error "Failed to download GPG key"
+            rm -rf "$TEMP_DIR"
             exit 1
         fi
     else
