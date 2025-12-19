@@ -63,4 +63,75 @@ Check that `rippled` is running as expected with `rippled server_info`
 
 For fresh systems, you can also run the [first-run.sh](https://github.com/XRPLF/rippled-portable-builds/tree/main/bootstrap) bash script.
 
+## Security
+
+**CRITICAL**: Always verify binary signatures before installation.
+
+### Quick Verification
+
+Use our verification script:
+```bash
+wget https://raw.githubusercontent.com/XRPLF/rippled-portable-builds/main/verify-binary.sh
+chmod +x verify-binary.sh
+./verify-binary.sh rippled-portable-2.1.1  # Replace with your version
+```
+
+### Security Resources
+
+- **[Security Policy](SECURITY.md)** - Vulnerability reporting and security best practices
+- **[Release Checklist](RELEASE_CHECKLIST.md)** - Security verification for releases
+- **[Contributing Guidelines](CONTRIBUTING.md)** - How to contribute securely
+
+### Key Security Practices
+
+1. **Always verify GPG signatures** before using any binary
+2. **Never skip signature verification** - it protects against tampering
+3. **Use official sources only** - download from this repository or official XRPLF sources
+4. **Test in non-production first** before deploying to production systems
+5. **Keep systems updated** with latest security patches
+6. **Follow the principle of least privilege** - don't run rippled as root
+
+### Reporting Security Issues
+
+If you discover a security vulnerability:
+- **DO NOT** open a public issue
+- Email: security@xrplf.org
+- See [SECURITY.md](SECURITY.md) for full details
+
+## Governance
+
+This project follows a security-first governance model:
+
+- **[Code of Conduct](CODE_OF_CONDUCT.md)** - Community standards and expectations
+- **Multiple maintainer review** required for binary additions
+- **Transparent decision-making** for all changes
+- **Security audits** for critical components
+- **Community input** welcomed through issues and discussions
+
+## Contributing
+
+We welcome contributions! Please see:
+
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** - Contribution guidelines
+- **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)** - Community standards
+- **[SECURITY.md](SECURITY.md)** - Security requirements
+
+### Quick Contributing Guide
+
+1. Read the security policy and code of conduct
+2. Fork the repository
+3. Create a feature branch
+4. Make your changes (following security guidelines)
+5. Test thoroughly
+6. Submit a pull request
+
+**Note**: Binary submissions require verification of GPG signatures and official XRPLF source.
+
+## Support
+
+- **Issues**: Use GitHub Issues for bug reports and feature requests
+- **Security**: See [SECURITY.md](SECURITY.md) for vulnerability reporting
+- **Documentation**: Check XRPL.org for rippled documentation
+- **Community**: Join XRPL community channels
+
 **Credits: An enormous Thank you to [@RichardAH](https://github.com/richardah) for his amazing work on this project!**
