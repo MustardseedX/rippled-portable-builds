@@ -219,6 +219,35 @@ To update to a new version:
 - **Support**: This is community-maintained; for official support see XRPLF
 - **Updates**: Subscribe to releases for security updates
 
+## 📝 Contributing Documentation
+
+Found a gap in the documentation? Want to share your experience?
+
+### Easy Upload Interface
+
+We have an interactive upload helper:
+
+```bash
+./upload-document.sh
+```
+
+This makes it easy to:
+- Add tutorials and guides
+- Share configuration examples
+- Contribute troubleshooting tips
+- Upload platform-specific instructions
+- Add images and diagrams
+
+### What to Contribute
+
+- Installation guides for specific platforms
+- Common error solutions
+- Performance tuning tips
+- Deployment examples
+- Your real-world experiences
+
+See **[DOCUMENT_UPLOAD_GUIDE.md](DOCUMENT_UPLOAD_GUIDE.md)** for details.
+
 ## 📞 Emergency Contacts
 
 **Security Vulnerabilities**: security@xrplf.org  

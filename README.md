@@ -115,6 +115,31 @@ We welcome contributions! Please see:
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** - Contribution guidelines
 - **[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)** - Community standards
 - **[SECURITY.md](SECURITY.md)** - Security requirements
+- **[DOCUMENT_UPLOAD_GUIDE.md](DOCUMENT_UPLOAD_GUIDE.md)** - How to upload documents and assets
+
+### Upload Documents & Assets
+
+We've made it easy to contribute documentation! Use our upload helper:
+
+```bash
+./upload-document.sh
+```
+
+This interactive script helps you:
+- Upload tutorials, guides, and examples
+- Add platform-specific documentation
+- Contribute troubleshooting guides
+- Upload images and diagrams
+- Add configuration templates
+
+Or manually place files in `docs/` directory:
+- `docs/tutorials/` - Step-by-step guides
+- `docs/examples/` - Configuration examples
+- `docs/troubleshooting/` - Problem solutions
+- `docs/platform-guides/` - Platform-specific guides
+- `docs/images/` - Images and diagrams
+
+See [DOCUMENT_UPLOAD_GUIDE.md](DOCUMENT_UPLOAD_GUIDE.md) for details.
 
 ### Quick Contributing Guide
 
