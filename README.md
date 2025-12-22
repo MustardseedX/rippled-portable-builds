@@ -63,4 +63,14 @@ Check that `rippled` is running as expected with `rippled server_info`
 
 For fresh systems, you can also run the [first-run.sh](https://github.com/XRPLF/rippled-portable-builds/tree/main/bootstrap) bash script.
 
+## Security
+
+### Reporting Security Concerns
+
+If you have security or governance concerns about this repository, please see [SECURITY_ESCALATION.md](SECURITY_ESCALATION.md) for procedures on preserving evidence and escalating through appropriate channels.
+
+### Binary Verification
+
+Always verify GPG signatures before using any binaries from this repository. See the installation instructions above for verification steps.
+
 **Credits: An enormous Thank you to [@RichardAH](https://github.com/richardah) for his amazing work on this project!**
