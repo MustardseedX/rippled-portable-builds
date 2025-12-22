@@ -38,8 +38,8 @@ When preserving evidence, capture:
 For escalation with Pro/Enterprise admins or GitHub Support:
 
 1. **One-line summary** about the specific issue (e.g., "Concerns about PR #1")
-2. **Long preservation instructions** (detailed evidence and context you've documented)
-3. **Escalation template** (formal request for review through security/compliance channels)
+2. **Long preservation instructions** (detailed evidence and context you've documented above)
+3. **Full escalation template** (see "Full Escalation Template" section below for a formal request template)
 
 ## Contacting GitHub Support
 
@@ -98,6 +98,49 @@ When they respond, provide your prepared **long preservation instructions** incl
 - Impact assessment
 - Requested actions
 
+#### Full Escalation Template
+
+Use this template for detailed escalation to GitHub Support or organization administrators:
+
+```
+Subject: Security/Governance Concern - MustardseedX/rippled-portable-builds
+
+Repository: MustardseedX/rippled-portable-builds
+Nature of Concern: [Security Vulnerability / Governance Issue / Terms Violation / Other]
+
+SUMMARY:
+[Brief 1-2 sentence description of the concern]
+
+TIMELINE:
+- [Date/Time]: [Event description]
+- [Date/Time]: [Event description]
+- [Add more as needed]
+
+EVIDENCE:
+- Pull Request(s): [URLs]
+- Commit(s): [SHA(s) and URLs]
+- Issue(s): [URLs]
+- Other artifacts: [Describe or link]
+
+IMPACT ASSESSMENT:
+[Describe the potential or actual impact on:
+ - Repository security
+ - User trust
+ - Compliance requirements
+ - Network integrity (for rippled binaries)]
+
+REQUESTED ACTION:
+[Specifically state what you are requesting:
+ - Investigation
+ - Evidence preservation
+ - Access review
+ - Incident response
+ - Other specific actions]
+
+ADDITIONAL CONTEXT:
+[Any other relevant information]
+```
+
 ### Step 3: Follow Escalation Chain
 
 Depending on the nature of the concern:
@@ -141,9 +184,9 @@ When reporting concerns about this repository, consider:
 |-----------|-------------------|--------------|
 | Quick report in admin chat | Organization admin | Quick SOS template |
 | GitHub Support web form (short) | GitHub Support | Quick SOS template |
-| GitHub Support email | GitHub Support | Long preservation block |
-| Organization admin email | Organization admin | Long preservation block + escalation template |
-| Support ticket with details | GitHub Support | Full documentation package |
+| GitHub Support email | GitHub Support | Long preservation block (evidence list) |
+| Organization admin email | Organization admin | Long preservation block + full escalation template |
+| Support ticket with details | GitHub Support | Full escalation template with all evidence |
 
 ---
 
