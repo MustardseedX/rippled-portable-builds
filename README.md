@@ -1,5 +1,6 @@
 # Portable Builds of the `rippled` server
 
+> **Reference Documentation:** This repository maintains reference documentation for good governance and providence. See [REFERENCES.md](REFERENCES.md) for foundational documents including the King James Bible and the Constitution of the United States of America with the Bill of Rights.
 
 **GPG Fingerprint:** `6D70 4017 0DEA 4F69 DEF5  D569 B6F9 7CF2 1A96 2003`
 
